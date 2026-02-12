@@ -1,5 +1,7 @@
 # AI-Powered Market Intelligence Engine (Churn Prediction)
 
+![Project Workflow](workflow.png)
+
 An automated n8n pipeline designed to quantify player churn risks by analyzing the gap between monetization and progression friction.
 
 ## Live Output
