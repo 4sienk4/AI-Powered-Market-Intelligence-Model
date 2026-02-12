@@ -1,2 +1,28 @@
-# AI-Powered-Market-Intelligence-Model
-An autonomous market intelligence engine built with n8n and LLMs to quantify consumer churn risks and sentiment at scale.
+# AI-Powered Market Intelligence Engine (Churn Prediction)
+
+An automated n8n pipeline designed to quantify player churn risks by analyzing the gap between monetization and progression friction.
+
+## Overview
+This system transforms raw community data into structured business intelligence. It was built to identify why players drop out of live-service economies, using a dataset of N=950 records from the Fortnite ecosystem as a primary case study.
+
+## Architecture & Logic
+The workflow is built modularly to ensure scalability and easier debugging:
+
+* **Ingestion Layer**: Automated scraping from Reddit (r/FortNiteBR) with integrated rate-limiting to handle API constraints.
+* **Analysis Loop**: Batch-processed sentiment analysis using Gemini 2.5 Flash. It classifies feedback into three core buckets: Price, Time, and General Engagement.
+* **Reporting Branch**: An autonomous logic that calculates global statistics and generates a strategic summary without human intervention.
+
+## Tech Stack
+* **Orchestration**: n8n (Modular Workflow)
+* **LLM**: Google Gemini API
+* **Data Modeling**: Airtable (Relational Database)
+* **Logic**: JavaScript (Custom JSON parsing & sanitization)
+
+## Security & Implementation
+* **Credential Handling**: The provided `workflow.json` contains credential IDs only. To run this, you must link your own Gemini and Airtable API keys within your n8n instance.
+* **Error Handling**: Implemented Wait/Buffer nodes to manage API rate limits and Code nodes for robust data parsing.
+
+## Strategic Impact
+The model successfully identified that "progression friction" (Avg. Frustration: 5.3/10) is a more frequent churn driver than direct financial cost. This led to a data-backed recommendation for "Legacy Pass" models to optimize long-term retention.
+## Key Insights Generated
+The model successfully identified that **"progression friction"** (Avg. Frustration: 5.3/10) is a more frequent churn driver than direct financial cost in the current meta. This led to a strategic recommendation for **"Legacy Battle Pass"** models to improve long-term player retention.
