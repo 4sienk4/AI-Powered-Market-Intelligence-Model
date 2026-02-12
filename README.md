@@ -22,7 +22,5 @@ The workflow is built modularly to ensure scalability and easier debugging:
 * **Credential Handling**: The provided `workflow.json` contains credential IDs only. To run this, you must link your own Gemini and Airtable API keys within your n8n instance.
 * **Error Handling**: Implemented Wait/Buffer nodes to manage API rate limits and Code nodes for robust data parsing.
 
-## Strategic Impact
-The model successfully identified that "progression friction" (Avg. Frustration: 5.3/10) is a more frequent churn driver than direct financial cost. This led to a data-backed recommendation for "Legacy Pass" models to optimize long-term retention.
-## Key Insights Generated
+## Key Insights
 The model successfully identified that **"progression friction"** (Avg. Frustration: 5.3/10) is a more frequent churn driver than direct financial cost in the current meta. This led to a strategic recommendation for **"Legacy Battle Pass"** models to improve long-term player retention.
