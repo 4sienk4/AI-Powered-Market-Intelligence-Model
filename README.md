@@ -1,4 +1,4 @@
-# AI-Powered Market Intelligence Engine (Churn Prediction)
+# Churn Prediction Model
 
 ![Project Workflow](workflow.png)
 
